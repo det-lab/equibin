@@ -1,10 +1,10 @@
 # ---- Project Info and Dependencies ----
 
 [project.urls]
-Repository = "https://github.com/det-lab/uniform-count-binning"
+Repository = "https://github.com/det-lab/equibin"
 
 [project]
-name = "uniform-count-binning"
+name = "equibin"
 description = "2D equal-probability binning (multivariate probability binning)"
 authors = [
     { name="Amy Roberts", email="cantor.duster@gmail.com" },
@@ -65,7 +65,7 @@ style = "pep440"
 bump = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/uniform_count_binning"]
+packages = ["src/equibin"]
 
 
 # ---- Settings ----
