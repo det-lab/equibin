@@ -8,6 +8,8 @@ name = "uniform-count-binning"
 description = "2D equal-probability binning (multivariate probability binning)"
 authors = [
     { name="Amy Roberts", email="cantor.duster@gmail.com" },
+    { name="Lekhraj Pandey", email="lekhraj.pandey@coyotes.usd.edu" },
+    { name="Anthony Villano", email="anthony.villano@ucdenver.edu" },
 ]
 license = { text = "GPL-2.0-only" }
 requires-python = ">=3.11,<4.0"
