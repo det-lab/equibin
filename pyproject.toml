@@ -7,10 +7,11 @@ Repository = "https://github.com/det-lab/equibin"
 name = "equibin"
 description = "2D equal-probability binning (multivariate probability binning)"
 authors = [
-    { name="Amy Roberts", email="cantor.duster@gmail.com" },
+    { name="Amy Roberts", email="amy.roberts@ucdenver.edu" },
     { name="Lekhraj Pandey", email="lekhraj.pandey@coyotes.usd.edu" },
     { name="Anthony Villano", email="anthony.villano@ucdenver.edu" },
 ]
+readme = "README.md"
 license = { text = "GPL-2.0-only" }
 requires-python = ">=3.11,<4.0"
 dynamic = ["version"]
