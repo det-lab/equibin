@@ -2,7 +2,9 @@
 2D equal-probability binning (multivariate probability binning).
 
 Algorithm from:
-    Roederer et al. (2001). Cytometry 45:47-55.
+    Roederer, M., Moore, W., Treister, A., Hardy, R. R. & Herzenberg, L. A. (2001).
+    Probability binning comparison: a metric for quantitating multivariate distribution
+    differences. Cytometry 45(1):47-55.
     https://doi.org/10.1002/1097-0320(20010901)45:1<47::AID-CYTO1143>3.0.CO;2-A
 """
 
@@ -52,7 +54,9 @@ def bin_2d(
     its median until `n_bins` bins are produced. `n_bins` need not be a power
     of two. Algorithm from:
 
-        Roederer et al. (2001). Cytometry 45:47-55.
+        Roederer, M., Moore, W., Treister, A., Hardy, R. R. & Herzenberg, L. A. (2001).
+        Probability binning comparison: a metric for quantitating multivariate distribution
+        differences. Cytometry 45(1):47-55.
         https://doi.org/10.1002/1097-0320(20010901)45:1<47::AID-CYTO1143>3.0.CO;2-A
 
     Parameters
