@@ -16,7 +16,7 @@ This implements the multivariate probability binning algorithm described in:
 > Roederer, M., Moore, W., Treister, A., Hardy, R. R. & Herzenberg, L. A. (2001).
 > Probability binning comparison: a metric for quantitating multivariate distribution differences.
 > *Cytometry* 45(1):47–55.
-> https://doi.org/10.1002/1097-0320(20010901)45:1<47::AID-CYTO1143>3.0.CO;2-A
+> [https://doi.org/10.1002/1097-0320(20010901)45:1<47::AID-CYTO1143>3.0.CO;2-A](https://doi.org/10.1002/1097-0320%2820010901%2945:1%3C47::AID-CYTO1143%3E3.0.CO;2-A)
 
 ## Installation
 
