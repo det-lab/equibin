@@ -13,7 +13,7 @@ authors = [
 ]
 readme = "README.md"
 license = { text = "GPL-2.0-only" }
-requires-python = ">=3.11,<4.0"
+requires-python = ">=3.9,<4.0"
 dynamic = ["version"]
 
 classifiers = [
@@ -22,6 +22,8 @@ classifiers = [
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
@@ -38,16 +40,25 @@ dependencies = [
 
 
 # ---- Dev dependencies ----
+# Split so CI can run the test matrix on Python versions the lint group's
+# tools don't support (funlog>=0.2.1 requires Python>=3.10) without
+# narrowing requires-python back down for the whole package.
 
 [dependency-groups]
-dev = [
+test = [
     "pytest>=8.3.5",
     "pytest-sugar>=1.0.0",
+]
+lint = [
     "ruff>=0.11.9",
     "codespell>=2.4.1",
     "rich>=14.0.0",
     "basedpyright>=1.29.1",
-    "funlog>=0.2.1",
+    "funlog>=0.2.1; python_version >= '3.10'",
+]
+dev = [
+    { include-group = "test" },
+    { include-group = "lint" },
 ]
 
 
